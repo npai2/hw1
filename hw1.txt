@@ -1,0 +1,28 @@
+Nitin Pai	Hw 1
+
+Problem 1
+
+Part a: 
+1, 2, 3, 5, 6
+
+Part b:
+2, 3, 4, 5, 7
+
+Part c:
+3
+
+Part d:
+4
+
+Problem 2
+
+Part a:
+1, 3,
+
+Part b:
+git add hw1q2b.cpp
+git log -p -3
+
+Part c:
+The command 'git commit' will commit all changes to the three files that you staged. Since no message was specified, the message log will use the default commit message which contains the latest output of the git status command. This can be removed by specifying a message using -m "message".
+
