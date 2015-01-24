@@ -33,14 +33,13 @@ void printList(ostream& ofile, Item* head)
 void readLists(ifstream& ifile, Item*& head1, Item*& head2)
 {
 	string str1, str2;
-	Item *newItem2;
-	Item *newItem;
 	getline(ifile, str1);
 	getline(ifile, str2);
 	stringstream ss;
 	ss << str1;
 	if(!str1.empty())
 	{
+		Item *newItem;
 		int a;
 		ss >> a;
 		head1 = new Item(a, NULL);
@@ -58,6 +57,7 @@ void readLists(ifstream& ifile, Item*& head1, Item*& head2)
 	ss2 << str2;
 	if(!str2.empty())
 	{
+		Item *newItem2;
 		int b;
 		ss2 >> b;
 		head2 = new Item(b, NULL);
@@ -185,7 +185,7 @@ int main(int argc, char* argv [])
 	myFile.close();
 	//cout << "compile" << endl;
 	
-	while(head1)
+	/*while(head1)
 	{
 		Item *iterator = head1;
 		head1 = head1->next;
@@ -203,7 +203,7 @@ int main(int argc, char* argv [])
 		Item *iterator = head3;
 		head3 = head3->next;
 		delete iterator;
-	}
+	}*/
 
 
 	return 0;
